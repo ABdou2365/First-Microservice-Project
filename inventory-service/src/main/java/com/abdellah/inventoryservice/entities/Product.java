@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
 
+import java.util.UUID;
+
 @Entity @Getter
 @Setter @AllArgsConstructor @NoArgsConstructor @Builder @ToString
 public class Product {
