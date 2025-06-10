@@ -2,13 +2,16 @@ package com.abdellah.customerservice;
 
 
 import com.abdellah.customerservice.entities.Customer;
+import com.abdellah.customerservice.entities.CustomerConfigProperties;
 import com.abdellah.customerservice.repository.CustomerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+@EnableConfigurationProperties(CustomerConfigProperties.class)
 public class CustomerServiceApplication {
 
 	public static void main(String[] args) {
