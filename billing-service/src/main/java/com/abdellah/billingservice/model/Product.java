@@ -1,5 +1,6 @@
 package com.abdellah.billingservice.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,6 +16,7 @@ Product is not stored in the database, but instead used only at runtime to:
 
 @Getter
 @Setter
+@Builder
 public class Product {
     private String id;
     private String name;

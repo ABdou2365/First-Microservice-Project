@@ -14,7 +14,7 @@ In short:
 👉 customer is transient — just a helper to carry full customer data when needed.
  */
 
-@Getter @Setter
+@Getter @Setter @Builder
 public class Customer {
     private Long id;
     private String name;
